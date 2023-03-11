@@ -73,7 +73,7 @@ function VotingEntriesWater() {
   let waterPhotoArray = []
   let newArray = []
 
-  waterPhotoArray.push(null, null, null, null, four, five, six)
+  waterPhotoArray.push(null, null,null, null, four, five, six)
 
   entries?.forEach((e, i) => {
 
@@ -102,7 +102,7 @@ function VotingEntriesWater() {
   const filteredEntryArray = entryArray?.filter(e => e.name.toLowerCase().includes(query.toLowerCase()))
 
   return address && walletStatus === "Connected" ? (
-    <div className='base'>
+    <div className='base-voting-melt'>
       <Navbar />
       <div><img className="connect-title-gold-bg mt-5" src={titleGoldBg} alt="n/a" />
         <Heading p='4' noOfLines={2} color='#F3C674' className='water-hash-title me-1' > Water Hashish Entries</Heading>
@@ -132,7 +132,7 @@ function VotingEntriesWater() {
       <img className="footer" src={$footer} alt="n/a" />
     </div>
   ) : (
-    <Container>
+    <Container className="base-wallet-gate">
       {" "}
       <div className="base">
         <div>

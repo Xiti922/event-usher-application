@@ -4,6 +4,24 @@
     background: #222222;
 }
 
+.base-voting-rosin{
+    background: #222222;
+    height: 100%;
+}
+.base-voting-melt{
+    background: #222222;
+    height: 100%;
+}
+.base-voting-sift{
+    background: #222222;
+    height: 100%;
+}
+.base-wallet-gate{
+    background: #222222;
+    background-size: cover;
+    height: 1000px;
+    width: fit-content;
+}
 .title-gold-bg {
     padding-top: 4%;
     width: 75%;

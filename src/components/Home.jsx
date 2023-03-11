@@ -272,8 +272,7 @@ function Home() {
               </Button>
               <Button variant='ghost'><Text>
 
-                <Link color='teal.500' href='https://iris-talon-1e3.notion.site/The-Official-Legends-Event-Judging-Ticket-Application-Wiki-72a7759568854729a137812f1a9d5e5a'>
-                  View Wiki   </Link>
+                <Link color='teal.500' href='https://zenith-oval-36e.notion.site/The-Official-Legends-Event-Judging-Ticket-Application-Wiki-fd55a4fc1eaf4f8291d1b3afd37614b2'>View Wiki</Link>
               </Text></Button>
             </ModalFooter>
           </ModalContent>
@@ -293,9 +292,9 @@ function Home() {
 
     </div>
   ) : (
-    <div>
+    <div >
       {" "}
-      <div className="base">
+      <div className="base-wallet-gate">
         <div>
           <Center>
             <Container>

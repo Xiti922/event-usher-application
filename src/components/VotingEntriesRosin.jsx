@@ -101,7 +101,7 @@ function VotingEntriesRosin() {
   const filteredEntryArray = entryArray?.filter(e => e.name.toLowerCase().includes(query.toLowerCase()))
 
   return address && walletStatus === "Connected" ? (
-    <div className='base'>
+    <div className='base-voting-rosin'>
       <Navbar />
       <div><img className="connect-title-gold-bg mt-5" src={titleGoldBg} alt="n/a" />
         <Heading p='4' noOfLines={2} color='#F3C674' className='water-hash-title me-1' > Hash Rosin Entries</Heading>

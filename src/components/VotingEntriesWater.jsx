@@ -18,17 +18,6 @@ import three from '../assets/Compressed pics/three.png'
 import four from '../assets/Compressed pics/four.png'
 import five from '../assets/Compressed pics/five.png'
 import six from '../assets/Compressed pics/six.png'
-import seven from '../assets/Compressed pics/seven.png'
-import eight from '../assets/Compressed pics/eight.png'
-import nine from '../assets/Compressed pics/nine.png'
-import ten from '../assets/Compressed pics/ten.png'
-import eleven from '../assets/Compressed pics/eleven.png'
-import twelve from '../assets/Compressed pics/tweleve.png'
-import thirteen from '../assets/Compressed pics/thirteen.png'
-import fourteen from '../assets/Compressed pics/fourteen.png'
-import fifteen from '../assets/Compressed pics/fifteen.png'
-import sixteen from '../assets/Compressed pics/sixteen.png'
-import seventeen from '../assets/Compressed pics/seventeen.png'
 import { FormGroup } from 'react-bootstrap';
 import { Input, Stack } from '@chakra-ui/react';
 
@@ -84,7 +73,7 @@ function VotingEntriesWater() {
   let waterPhotoArray = []
   let newArray = []
 
-  waterPhotoArray.push(null, null, null, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen)
+  waterPhotoArray.push(null, null, null, null, four, five, six)
 
   entries?.forEach((e, i) => {
 
@@ -102,7 +91,7 @@ function VotingEntriesWater() {
   console.log(entryArray);
 
   async function connectOnClick() {
-    setCurrentChain("juno")
+    setCurrentChain("junotestnet")
     await connect()
   }
 

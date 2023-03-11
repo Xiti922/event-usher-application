@@ -49,7 +49,7 @@ function VotingCategories() {
   }
 
   async function connectOnClick() {
-    setCurrentChain("juno")
+    setCurrentChain("junotestnet")
     await connect()
   }
 

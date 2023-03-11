@@ -15,43 +15,9 @@ import { useEffect, useState } from 'react';
 import { queryRosinEntries } from '../contracts/voteContract';
 import EntryCard from './EntryCard';
 import rectangle8 from '../assets/rectangle8.png'
-import eighteen from '../assets/Compressed pics/eighteen.png'
-import nineteen from '../assets/Compressed pics/nineteen.png'
-import twenty from '../assets/Compressed pics/twenty.png'
-import twentyone from '../assets/Compressed pics/twentyone.png'
-import twentytwo from '../assets/Compressed pics/twentytwo.png'
-import twentythree from '../assets/Compressed pics/twentythree.png'
-import twentyfour from '../assets/Compressed pics/twentyfour.png'
-import twentyfive from '../assets/Compressed pics/twentyfive.png'
-import twentysix from '../assets/Compressed pics/twentysix.png'
-import twentyseven from '../assets/Compressed pics/twentyseven.png'
-import twentyeight from '../assets/Compressed pics/twentyeight.png'
-import twentynine from '../assets/Compressed pics/twentynine.png'
-import thirty from '../assets/Compressed pics/thirty.png'
-import thirtyone from '../assets/Compressed pics/thirtyone.png'
-import thirtytwo from '../assets/Compressed pics/thirtytwo.png'
-import thirtythree from '../assets/Compressed pics/thirtythree.png'
-import thirtyfour from '../assets/Compressed pics/thirtyfour.png'
-import thirtyfive from '../assets/Compressed pics/thirtyfive.png'
-import thirtysix from '../assets/Compressed pics/thirtysix.png'
-import thirtyseven from '../assets/Compressed pics/thirtyseven.png'
-import thirtyeight from '../assets/Compressed pics/thirtyeight.png'
-import thirtynine from '../assets/Compressed pics/thirtynine.png'
-import fourty from '../assets/Compressed pics/fourty.png'
-import fourtyone from '../assets/Compressed pics/fourtyone.png'
-import fourtytwo from '../assets/Compressed pics/fourtytwo.png'
-import fourtythree from '../assets/Compressed pics/fourtythree.png'
-import fourtyfour from '../assets/Compressed pics/fourtyfour.png'
-import fourtyfive from '../assets/Compressed pics/fourtyfive.png'
-import fourtysix from '../assets/Compressed pics/fourtysix.png'
-import fourtyseven from '../assets/Compressed pics/fourtyseven.png'
-import fourtyeight from '../assets/Compressed pics/fourtyeight.png'
-import fourtynine from '../assets/Compressed pics/fourtynine.png'
-import fiftyone from '../assets/Compressed pics/fiftyone.png'
-import fiftytwo from '../assets/Compressed pics/fiftytwo.png'
-import fiftythree from '../assets/Compressed pics/fiftythree.png'
-import fiftyfour from '../assets/Compressed pics/fiftyfour.png'
-import fiftyfive from '../assets/Compressed pics/fiftyfive.png'
+import one  from '../assets/Compressed pics/one.png'
+import two  from '../assets/Compressed pics/two.png'
+import three  from '../assets/Compressed pics/three.png'
 import { Input, Stack } from '@chakra-ui/react';
 
 
@@ -106,7 +72,7 @@ function VotingEntriesRosin() {
   let rosinPhotoArray = []
   let newArray = []
 
-  rosinPhotoArray.push(null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, eighteen, nineteen, twenty, twentyone, twentytwo, twentythree, twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine, thirty, thirtyone, thirtytwo, thirtythree, thirtyfour, thirtyfive, thirtysix, thirtyseven, thirtyeight, thirtynine, fourty, fourtyone, fourtytwo, fourtythree, fourtyfour, fourtyfive, fourtysix, fourtyseven, fourtyeight, fourtynine, rectangle8, fiftyone, fiftytwo, fiftythree, fiftyfour, fiftyfive)
+  rosinPhotoArray.push(null,one,two,three)
 
   entries?.forEach((e, i) => {
 
@@ -124,7 +90,7 @@ function VotingEntriesRosin() {
   console.log(entryArray);
 
   async function connectOnClick() {
-    setCurrentChain("juno")
+    setCurrentChain("junotestnet")
     await connect()
   }
 

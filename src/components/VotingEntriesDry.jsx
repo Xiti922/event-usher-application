@@ -20,8 +20,8 @@ import { useWallet } from '@cosmos-kit/react'
 import { queryDryEntries } from '../contracts/voteContract';
 import { useEffect } from 'react';
 import EntryCard from './EntryCard';
-import first from '../assets/Compressed pics/one.png'
-import second from '../assets/Compressed pics/two.png'
+import seven from '../assets/Compressed pics/seven.png'
+import eight from '../assets/Compressed pics/eight.png'
 import { Input, Stack } from '@chakra-ui/react';
 
 function VotingEntriesDry() {
@@ -64,7 +64,7 @@ function VotingEntriesDry() {
   let siftPhotoArray = []
   let newArray = []
 
-  siftPhotoArray.push(null, first, second)
+  siftPhotoArray.push(null, seven, eight)
 
   entries?.forEach((e, i) => {
 
@@ -94,7 +94,7 @@ function VotingEntriesDry() {
   }
 
   async function connectOnClick() {
-    setCurrentChain("juno")
+    setCurrentChain("junotestnet")
     await connect()
   }
 

@@ -3,7 +3,7 @@ import { checkMembership } from "./checkMembership"
 export const queryJudge = async (client, address ) => {
     return checkMembership(
             client,
-            "juno1rzc8xmegmsm20c7nz5zm657vs0lq0f3vu764eghqrd78c5725edqw5rqp4",
+            "juno1atcxpljfpha3mq6dqx59mv0rpmgfhl8cquyw0rvvq4c6dxgt8ncsmzjjgj",
             address
     )
 }

@@ -39,14 +39,14 @@ function Connect() {
     setCurrentChain,
     getSigningCosmWasmClient
   } = walletManager;
-
+  
   const [qrcode, setQrcode] = useState("")
 
   const [memberWeight, setMemberWeight] = useState(null)
   const [show, setShow] = useState(true)
 
   async function connectOnClick() {
-    setCurrentChain("juno")
+    setCurrentChain("junotestnet")
     await connect()
 
   }

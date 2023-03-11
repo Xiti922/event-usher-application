@@ -79,7 +79,7 @@ function Results() {
                   <Image maxW='170px' src={thirtythree} alt='EntryCover' />
                   <CardBody>
                     <Heading color='white' fontSize='lg' fontWeight='bold'></Heading>
-                    <Heading size='s' p='2'>First Place: Honey & Bananas</Heading>
+                    <Heading color="#deb887" size='s' p='2'>First Place: Honey & Bananas</Heading>
                     <Badge ml={.25} mh={.5} fontSize='.86em' colorScheme='green' >Professor Sift</Badge>
                   </CardBody>
                 </Card>
@@ -90,7 +90,7 @@ function Results() {
                   <Image maxW='170px' src={thirtyeight} alt='EntryCover' />
                   <CardBody>
                     <Heading color='white' fontSize='lg' fontWeight='bold'></Heading>
-                    <Heading size='s' p='2'>Second Place: Zenith</Heading>
+                    <Heading color="#c0c0c0" size='s' p='2'>Second Place: Zenith</Heading>
                     <Badge ml={.25} mh={.5} fontSize='.86em' colorScheme='green' >Mega Raw Melts</Badge>
                   </CardBody>
                 </Card>
@@ -101,7 +101,7 @@ function Results() {
                   <Image maxW='170px' src={fourtythree} alt='EntryCover' />
                   <CardBody>
                     <Heading color='white' fontSize='lg' fontWeight='bold'></Heading>
-                    <Heading size='s' p='2'>Third Place: Zapayaz</Heading>
+                    <Heading color="#D7954F" size='s' p='2'>Third Place: Zapayaz</Heading>
                     <Badge ml={.25} mh={.5} fontSize='.86em' colorScheme='green' >Secret Hash Society</Badge>
                   </CardBody>
                 </Card>
@@ -119,7 +119,7 @@ function Results() {
                   <Image maxW='170px' src={eleven} alt='EntryCover' />
                   <CardBody>
                     <Heading color='white' fontSize='lg' fontWeight='bold'></Heading>
-                    <Heading size='s' p='2'>First Place: ZhishkaBerry</Heading>
+                    <Heading color="#deb887" size='s' p='2'>First Place: ZhishkaBerry</Heading>
                     <Badge ml={.25} mh={.5} fontSize='.86em' colorScheme='green' >Ice House Melt</Badge>
                   </CardBody>
                 </Card>
@@ -130,7 +130,7 @@ function Results() {
                   <Image maxW='170px' src={three} alt='EntryCover' />
                   <CardBody>
                     <Heading color='white' fontSize='lg' fontWeight='bold'></Heading>
-                    <Heading size='s' p='2'>Second Place: Rainbow Beltz 2.0</Heading>
+                    <Heading color="#c0c0c0" size='s' p='2'>Second Place: Rainbow Beltz 2.0</Heading>
                     <Badge ml={.25} mh={.5} fontSize='.86em' colorScheme='green' >Quality Squishes</Badge>
                   </CardBody>
                 </Card>
@@ -141,7 +141,7 @@ function Results() {
                   <Image maxW='170px' src={seventeen} alt='EntryCover' />
                   <CardBody>
                     <Heading color='white' fontSize='lg' fontWeight='bold'></Heading>
-                    <Heading size='s' p='2'>Third Place: Durban Sherbert</Heading>
+                    <Heading color="#D7954F" size='s' p='2'>Third Place: Durban Sherbert</Heading>
                     <Badge ml={.25} mh={.5} fontSize='.86em' colorScheme='green' >Gold Country Resin</Badge>
                   </CardBody>
                 </Card>
@@ -159,7 +159,7 @@ function Results() {
                   <Image maxW='170px' src={one} alt='EntryCover' />
                   <CardBody>
                     <Heading color='white' fontSize='lg' fontWeight='bold'></Heading>
-                    <Heading size='s' p='2'>First Place: Double Gypsy Kush Cake</Heading>
+                    <Heading color="#deb887" size='s' p='2'>First Place: Double Gypsy Kush Cake</Heading>
                     <Badge ml={.25} mh={.5} fontSize='.86em' colorScheme='green' >Wolverine Dabs</Badge>
                   </CardBody>
                 </Card>

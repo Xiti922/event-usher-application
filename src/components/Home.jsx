@@ -293,7 +293,7 @@ function Home() {
 
     </div>
   ) : (
-    <Container >
+    <div>
       {" "}
       <div className="base">
         <div>
@@ -324,7 +324,7 @@ function Home() {
           </Center>
         </div>
       </div>
-    </Container>
+    </div>
   )
 }
 function BasicUsage() {

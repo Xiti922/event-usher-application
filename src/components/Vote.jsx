@@ -94,7 +94,7 @@ function Vote() {
     // Checks if Addr trying to send vote is an judge in the cw4-judging-group
     query()
       .then(
-        getJudge(judgeWeight) === 'Judge' ?
+        getJudge(judgeWeight) === '1' ?
           setIsJudge(true) : setIsJudge(null)
       )
 
@@ -217,7 +217,7 @@ function Vote() {
                 <input type="range" className="form-range" min="1.00" max="10.00" step='.01' onChange={handleMeltChange} value={meltValue}></input>
               </Container>
 
-              <Button onClick={(executeVote) => alert("Must be a judge to vote.")} size='lg' color='#e25273' >Confrim & Broadcast Vote</Button>                    </div>
+              <Button onClick={(executeVote)} size='lg' color='#e25273' >Confrim & Broadcast Vote</Button>                    </div>
           </div>
         </div>
       </div>

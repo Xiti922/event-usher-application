@@ -3,7 +3,7 @@ import { checkMembership } from "./checkMembership"
 export const queryGuestType = async (client, address) => {
   return checkMembership(
     client,
-    "juno1z6rx09269d43x8e6434y4qnd5cuv6dzrmy6pmwtufc4awvgjq9aq72sajc",
+    "juno13cs8u7t78kuyf2g8vzmqtur8q5jqgsn88jmzkzqk7f2cdzd6c6ps8mc4dm",
     address
   )
 }
@@ -11,7 +11,7 @@ export const queryGuestType = async (client, address) => {
 export const getGuestType = (weight) => {
   switch (weight) {
     case 1:
-      return "Mock Trial Judge"
+      return "Judge"
     case 2:
       return "Mock Trial Admin"
     case 3:

@@ -14,9 +14,9 @@ export const queryJudge = async (client, address) => {
 export const getJudge = (weight) => {
   switch (weight) {
     case 1:
-      return "Judge"
+      return "1"
     default:
-      return "non-judge"
+      return "0"
   }
 }
 

@@ -49,7 +49,7 @@ function Mint() {
   }
 
   async function connectOnClick() {
-    setCurrentChain("junotestnet")
+    setCurrentChain("juno")
     await connect()
 
   }

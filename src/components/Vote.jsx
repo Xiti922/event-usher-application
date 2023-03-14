@@ -91,6 +91,7 @@ function Vote() {
         console.log(response);
       }
     }
+    // Checks if Addr trying to send vote is an judge in the cw4-judging-group
     query()
       .then(
         getJudge(judgeWeight) === 'Judge' ?
@@ -135,7 +136,7 @@ function Vote() {
     )
   }
   async function connectOnClick() {
-    setCurrentChain("junotestnet")
+    setCurrentChain("juno")
     await connect()
   }
 

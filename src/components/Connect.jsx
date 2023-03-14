@@ -46,7 +46,7 @@ function Connect() {
   const [show, setShow] = useState(true)
 
   async function connectOnClick() {
-    setCurrentChain("junotestnet")
+    setCurrentChain("juno")
     await connect()
 
   }

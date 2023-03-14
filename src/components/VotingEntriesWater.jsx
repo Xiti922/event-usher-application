@@ -91,7 +91,7 @@ function VotingEntriesWater() {
   console.log(entryArray);
 
   async function connectOnClick() {
-    setCurrentChain("junotestnet")
+    setCurrentChain("juno")
     await connect()
   }
 

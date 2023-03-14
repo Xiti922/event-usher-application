@@ -3,7 +3,7 @@ import { checkMembership } from "./checkMembership"
 export const queryDayOneArrival = async (client, address) => {
   return checkMembership(
     client,
-    "juno1j2ysyynjfmmxcj7pmctqzmyjvf3flyckf7hexllvjgx5h8k5j7cs26cj4c",
+    "juno1vcsng5ursj3r7zm8p90xd3xkghsxthj02ypqcuxnpw9zuf90z0ssgckq6w",
     address
   )
 }
@@ -12,7 +12,7 @@ export const queryDayOneArrival = async (client, address) => {
 export const queryDayTwoArrival = async (client, address) => {
   return checkMembership(
     client,
-    "juno1t3pu7c4r8476gxuc5037c4y94x9sxspsxg7gync07hnmjset7rvsln3qzf",
+    "juno16h26k92gdyydt4s5nj6yt804x9ax6w7tcky7lsznklf9rzzxj4gsjg7jd4",
     address
   )
 }

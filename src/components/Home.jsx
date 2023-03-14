@@ -51,7 +51,7 @@ function Home() {
   console.log(walletManager);
 
   async function connectOnClick() {
-    setCurrentChain("junotestnet")
+    setCurrentChain("juno")
     await connect()
 
   }
@@ -283,9 +283,7 @@ function Home() {
 
       <div className='holder'>
         <Center><p className="transparent-judging">
-
         </p></Center>
-
         <img className="sponsors-1" src={sponsors1} />
       </div>
       <img className="footer" src={$footer} />
@@ -293,6 +291,7 @@ function Home() {
     </div>
   ) : (
     <div >
+      <Center>
       {" "}
       <div className="base-wallet-gate">
         <div>
@@ -323,6 +322,7 @@ function Home() {
           </Center>
         </div>
       </div>
+      </Center>
     </div>
   )
 }

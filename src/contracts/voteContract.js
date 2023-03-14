@@ -1,12 +1,12 @@
 import { checkMembership } from "./checkMembership"
 import { coins } from "@cosmjs/stargate"
 
-const VOTING_CONTRACT = "juno1cfqlr7vkmxgwxadfvvvma0hpprmex0z97wtzhltvnmhl9ux24p5s9f0wgg"
+const VOTING_CONTRACT = "juno15z7ggmhaxwtj8wyzjqr9mf9d5euwny70l3eplyyq63an8e04pexsgt6ldu"
 
 export const queryJudge = async (client, address) => {
   return checkMembership(
     client,
-    "juno1atcxpljfpha3mq6dqx59mv0rpmgfhl8cquyw0rvvq4c6dxgt8ncsmzjjgj",
+    "juno13cs8u7t78kuyf2g8vzmqtur8q5jqgsn88jmzkzqk7f2cdzd6c6ps8mc4dm",
     address
   )
 }
@@ -176,8 +176,8 @@ export const vote = (
       },
     },
     {
-      amount: coins(10000, "ujunox"),
-      gas: "10000",
+      amount: coins(4444, "ujuno"),
+      gas: "444444",
     }
   )
 }

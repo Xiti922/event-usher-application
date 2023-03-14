@@ -96,7 +96,7 @@ function Mothership() {
   }
 
   async function connectOnClick() {
-    setCurrentChain("junotestnet")
+    setCurrentChain("juno")
     await connect()
   }
 

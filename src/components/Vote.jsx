@@ -129,7 +129,7 @@ function Vote() {
       client,
       address,
       params.category,
-      Number(urlParams.get("entry")),
+      Number(parseInt(params.id)),
       {
         look: look.toString(),
         smell: smell.toString(),

@@ -22,6 +22,9 @@
     height: 1000px;
     width: fit-content;
 }
+.typeform-base {
+    background: #444444;
+}
 .title-gold-bg {
     padding-top: 4%;
     width: 75%;

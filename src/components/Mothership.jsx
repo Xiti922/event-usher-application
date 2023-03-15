@@ -135,7 +135,7 @@ function Mothership() {
               <CardFooter>
                 <LinkBox as="button" maxW='sm' p='5' borderWidth='1px' rounded='md'>
                   <Heading size='md' my='2'>
-                    <LinkOverlay href='https://stashh.io/collection/legends-of-hashish-event-access-tokens'>
+                    <LinkOverlay href='https://stashh.io/collection/legends-of-hashish-event-access-tokens?tab=badges'>
                       <Button> Claim Your NFT</Button>
                     </LinkOverlay>
                   </Heading>
@@ -177,7 +177,7 @@ function Mothership() {
               <CardFooter>
                 <LinkBox as="button" maxW='sm' p='5' borderWidth='1px' rounded='md'>
                   <Heading size='md' my='2'>
-                    <LinkOverlay href='https://stashh.io/asset/mothership-nfts/Free_Mint_Mothership_x_Legends'>
+                    <LinkOverlay href='https://stashh.io/asset/legends-of-hashish-event-access-tokens/LEGENDS_FREE_2022'>
                       <Button> View Your NFT</Button>
                     </LinkOverlay>
                   </Heading>
@@ -214,7 +214,7 @@ function Mothership() {
             <Center>
               <LinkBox as="button" maxW='full' p='5' borderWidth='1px' rounded='md'>
                 <Heading size='md' my='2'>
-                  <LinkOverlay href='https://stashh.io/collection/mothership-glass-drop-gz1-collab/'>
+                  <LinkOverlay href='https://stashh.io/collection/mothership-glass-drop-gz1-collab'>
                     <Button> View Your NFT</Button>
                   </LinkOverlay>
                 </Heading>
@@ -257,7 +257,7 @@ function Mothership() {
                 <Center>
                   <LinkBox as="button" maxW='sm' p='5' borderWidth='1px' rounded='md'>
                     <Heading size='md' my='2'>
-                      <LinkOverlay href='https://stashh.io/asset/mothership-nfts/MSxGZ_2022'>
+                      <LinkOverlay href='https://stashh.io/asset/mothership-glass-drop-gz1-collab/MSxGZ_Tshirt'>
                         <Button> View Your NFT</Button>
                       </LinkOverlay>
                     </Heading>

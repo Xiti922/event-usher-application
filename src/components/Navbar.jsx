@@ -38,6 +38,9 @@ function Navbar() {
   function toVoteCategories() {
     navigate('/Voting-Categories')
   }
+  function toRegister() {
+    navigate('/Register')
+  }
   function toScan() {
     navigate('/Scan')
   }
@@ -69,6 +72,7 @@ function Navbar() {
               <ul className='dropdown-menu' aria-labelledby="dropdownMenuButton1">
                 <li className='dropdown-item' onClick={toVoteCategories} color='white' colorScheme='white'>Vote</li>
                 <li className='dropdown-item' onClick={disconnect}>Disconnect</li>
+                <li className='dropdown-item' onClick={toRegister}>Register</li>
                 <li className='dropdown-item' onClick={toBrowse}>Browse</li>
               </ul>
             </div>

@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Connect from './components/Connect'
 import Mothership from './components/Mothership'
 import Mint from './components/Mint'
+import Register from './components/Register'
 import Scan from './components/Scan'
 import Fourohfour from './components/Fourohfour'
 import Results from './components/Results'
@@ -42,6 +43,7 @@ function App() {
             <Route path='/Connect' element={<Connect />}></Route>
             <Route path='/Mothership' element={<Mothership />}></Route>
             <Route path='/Mint' element={<Mint />}></Route>
+            <Route path='/Register' element={<Register />}></Route>
             <Route path='/Scan' element={<Scan />}></Route>
             <Route path='/404' element={<Fourohfour />}></Route>
             <Route path='/Voting-Categories' element={<VotingCategories />}></Route>

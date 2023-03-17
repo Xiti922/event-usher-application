@@ -7,7 +7,7 @@ import Connect from './components/Connect'
 import Mothership from './components/Mothership'
 import Mint from './components/Mint'
 import Scan from './components/Scan'
-import Shop from './components/Sshop.tsx'
+import Shop from './components/Shop.tsx'
 import Fourohfour from './components/Fourohfour'
 import Results from './components/Results'
 import VotingCategories from "./components/VotingCategories";
@@ -44,7 +44,7 @@ function App() {
             <Route path='/Mothership' element={<Mothership />}></Route>
             <Route path='/Mint' element={<Mint />}></Route>
             <Route path='/Scan' element={<Scan />}></Route>
-            <Route path='/Shop' element={<Scan />}></Route>
+            <Route path='/Shop' element={<Shop />}></Route>
             <Route path='/404' element={<Fourohfour />}></Route>
             <Route path='/Voting-Categories' element={<VotingCategories />}></Route>
             <Route path='/Voting-Entries-Melt' element={<VotingEntriesWater />}></Route>

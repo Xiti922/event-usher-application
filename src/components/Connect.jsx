@@ -39,7 +39,7 @@ function Connect() {
     setCurrentChain,
     getSigningCosmWasmClient
   } = walletManager;
-
+  
   const [qrcode, setQrcode] = useState("")
 
   const [memberWeight, setMemberWeight] = useState(null)

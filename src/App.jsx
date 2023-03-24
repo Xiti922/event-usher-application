@@ -6,6 +6,7 @@ import Home from './components/Home'
 import Connect from './components/Connect'
 import Mothership from './components/Mothership'
 import Mint from './components/Mint'
+import Register from './components/Register'
 import Scan from './components/Scan'
 import Shop from './components/Shop.tsx'
 import Fourohfour from './components/Fourohfour'
@@ -40,19 +41,19 @@ function App() {
           <ScrollToTop />
           <Routes>
             <Route path='/' element={<Home />}></Route>
-            <Route path='/Connect' element={<Connect />}></Route>
-            <Route path='/Mothership' element={<Mothership />}></Route>
-            <Route path='/Mint' element={<Mint />}></Route>
-            <Route path='/Scan' element={<Scan />}></Route>
-            <Route path='/Shop' element={<Shop />}></Route>
+            <Route path='/connect' element={<Connect />}></Route>
+            <Route path='/mothership' element={<Mothership />}></Route>
+            <Route path='/mint' element={<Mint />}></Route>
+            <Route path='/register' element={<Register />}></Route>
+            <Route path='/scan' element={<Scan />}></Route>
             <Route path='/404' element={<Fourohfour />}></Route>
-            <Route path='/Voting-Categories' element={<VotingCategories />}></Route>
-            <Route path='/Voting-Entries-Melt' element={<VotingEntriesWater />}></Route>
-            <Route path='/Voting-Entries-Rosin' element={<VotingEntriesRosin />}></Route>
-            <Route path='/Voting-Entries-Sift' element={<VotingEntriesDry />}></Route>
-            <Route path='/Vote/:category/:id/:src' element={<Vote />}></Route>
-            <Route path='/Browse' element={<AllImages />}></Route>
-            <Route path='/Results' element={<Results />}></Route>
+            <Route path='/voting-categories' element={<VotingCategories />}></Route>
+            <Route path='/voting-entries-melt' element={<VotingEntriesWater />}></Route>
+            <Route path='/voting-entries-rosin' element={<VotingEntriesRosin />}></Route>
+            <Route path='/voting-entries-sift' element={<VotingEntriesDry />}></Route>
+            <Route path='/vote/:category/:id/:src' element={<Vote />}></Route>
+            <Route path='/browse' element={<AllImages />}></Route>
+            <Route path='/results' element={<Results />}></Route>
           </Routes>
         </Router>
       </WalletProvider>

@@ -12,6 +12,7 @@ import { Image } from '@chakra-ui/react'
 import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, } from '@chakra-ui/react'
 import Navbar from './Navbar';
 import { Stack, HStack, VStack } from '@chakra-ui/react'
+import two from '../assets/Compressed pics/two.png'
 import sponsors1 from "../assets/sponsors1.png";
 import { Text } from '@chakra-ui/react'
 import titleGoldBg from "../assets/LOH_LONG_CURVED_COLOR_2.png";
@@ -69,18 +70,21 @@ function Home() {
     }
     query()
   }, [address])
-
+  
+  function toRegister() {
+    navigate('/register')
+  }
   function toConnect() {
-    navigate('/Connect')
+    navigate('/connect')
   }
   function toVoteCategories() {
-    navigate('/Voting-Categories')
+    navigate('/voting-categories')
   }
   function toResults() {
-    navigate('/Results')
+    navigate('/results')
   }
   function toMothership() {
-    navigate('/Mothership')
+    navigate('/mothership')
   }
 
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -103,13 +107,35 @@ function Home() {
 
         </div>
 
+        <Box p='2'>
+          <Card direction='row' overflow='hidden' variant='outline'>
+            <Image
+              objectFit='cover'
+              maxW='150px'
+              src="https://static.wixstatic.com/media/bf939a_b013ec07669d43b7b8e3c69a2bfee731~mv2.jpeg/v1/crop/x_65,y_0,w_1039,h_1140/fill/w_320,h_351,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_6F87080121FA-1.jpeg"
+              alt='Categories'
+            />
+            <Stack>
+              <CardBody>
+                <Heading color='white' size='md'>Register for 2023</Heading>
+                <Text color='white' py='2'>
+                  Register to be able to purchase a ticket to the 2023 Legends of Hashish.
+
+                </Text>
+                <Button variant='solid' colorScheme='yellow' p='2' onClick={toRegister}>
+                  Register Now!
+                </Button>
+              </CardBody>
+            </Stack>
+          </Card>
+        </Box>
 
         <Box p='2'>
           <Card direction='row' overflow='hidden' variant='outline'>
             <Image
               objectFit='cover'
               maxW='150px'
-              src="https://bafybeiauxhvmsfhsprvysr3slrc7naxiv34h65pnqvtgwfuz4mmpm7fptm.ipfs.nftstorage.link/"
+              src={two}
               alt='Categories'
             />
             <Stack>
@@ -146,7 +172,7 @@ function Home() {
               <CardBody>
                 <Heading color='white' size='md'>NFT Drop's</Heading>
                 <Text py='2' color="white">
-                  View all NFT Collections
+                  View All NFT Collections
 
                 </Text>
               </CardBody>
@@ -169,7 +195,7 @@ function Home() {
             />
             <Stack>
               <CardBody>
-                <Heading color="white" size='md'>Display QR.</Heading>
+                <Heading color="white" size='md'>Display QR Ticekt.</Heading>
                 <Text color="white" py='2'>
                   Ensure you have already installed & imported your Legends Event Mnemonic Seed to Keplr Mobile.
                 </Text>
@@ -272,8 +298,7 @@ function Home() {
               </Button>
               <Button variant='ghost'><Text>
 
-                <Link color='teal.500' href='https://iris-talon-1e3.notion.site/The-Official-Legends-Event-Judging-Ticket-Application-Wiki-72a7759568854729a137812f1a9d5e5a'>
-                  View Wiki   </Link>
+                <Link color='teal.500' href='https://zenith-oval-36e.notion.site/The-Official-Legends-Event-Judging-Ticket-Application-Wiki-fd55a4fc1eaf4f8291d1b3afd37614b2'>View Wiki</Link>
               </Text></Button>
             </ModalFooter>
           </ModalContent>
@@ -284,18 +309,17 @@ function Home() {
 
       <div className='holder'>
         <Center><p className="transparent-judging">
-
         </p></Center>
-
         <img className="sponsors-1" src={sponsors1} />
       </div>
       <img className="footer" src={$footer} />
 
     </div>
   ) : (
-    <Container >
+    <div >
+      <Center>
       {" "}
-      <div className="base">
+      <div className="base-wallet-gate">
         <div>
           <Center>
             <Container>
@@ -324,7 +348,8 @@ function Home() {
           </Center>
         </div>
       </div>
-    </Container>
+      </Center>
+    </div>
   )
 }
 function BasicUsage() {

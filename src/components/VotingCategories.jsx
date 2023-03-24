@@ -110,7 +110,7 @@ function VotingCategories() {
   ) : (
     <Container>
       {" "}
-      <div className="base">
+      <div className="base-wallet-gate">
         <div>
           <Center>
             <Container>

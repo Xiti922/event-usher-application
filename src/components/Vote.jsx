@@ -64,6 +64,9 @@ function Vote() {
   const [votes, setVotes] = useState([])
 
   const paramIdToNum = params.id
+  const paramCategoryToString = params.category
+  
+  
 
 
   const handleLookChange = e => setLookValue(e.target.value)
@@ -72,8 +75,8 @@ function Vote() {
   const handleMeltChange = e => setMeltValue(e.target.value)
 
   let navigate = useNavigate()
-
   const { search } = useLocation()
+
   const urlParams = useMemo(() => new URLSearchParams(search), [search])
 
   function toVoteCategories() {
@@ -91,9 +94,10 @@ function Vote() {
         console.log(response);
       }
     }
+    // Checks if Addr trying to send vote is an judge in the cw4-judging-group
     query()
       .then(
-        getJudge(judgeWeight) === 'Judge' ?
+        getJudge(judgeWeight) === '1' ?
           setIsJudge(true) : setIsJudge(null)
       )
 
@@ -124,8 +128,8 @@ function Vote() {
     const response = await vote(
       client,
       address,
-      urlParams.get("category"),
-      Number(urlParams.get("entry")),
+      params.category,
+      Number(parseInt(params.id)),
       {
         look: look.toString(),
         smell: smell.toString(),
@@ -216,7 +220,7 @@ function Vote() {
                 <input type="range" className="form-range" min="1.00" max="10.00" step='.01' onChange={handleMeltChange} value={meltValue}></input>
               </Container>
 
-              <Button onClick={(executeVote) => alert("Must be a judge to vote.")} size='lg' color='#e25273' >Confrim & Broadcast Vote</Button>                    </div>
+              <Button onClick={(executeVote)} size='lg' color='#e25273' >Confrim & Broadcast Vote</Button>                    </div>
           </div>
         </div>
       </div>

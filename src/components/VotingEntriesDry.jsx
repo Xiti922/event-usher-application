@@ -20,8 +20,8 @@ import { useWallet } from '@cosmos-kit/react'
 import { queryDryEntries } from '../contracts/voteContract';
 import { useEffect } from 'react';
 import EntryCard from './EntryCard';
-import first from '../assets/Compressed pics/one.png'
-import second from '../assets/Compressed pics/two.png'
+import seven from '../assets/Compressed pics/seven.png'
+import eight from '../assets/Compressed pics/eight.png'
 import { Input, Stack } from '@chakra-ui/react';
 
 function VotingEntriesDry() {
@@ -64,7 +64,7 @@ function VotingEntriesDry() {
   let siftPhotoArray = []
   let newArray = []
 
-  siftPhotoArray.push(null, first, second)
+  siftPhotoArray.push(null,null,null,null,null,null, null, seven, eight)
 
   entries?.forEach((e, i) => {
 
@@ -105,7 +105,7 @@ function VotingEntriesDry() {
   const filteredEntryArray = entryArray?.filter(e => e.name.toLowerCase().includes(query.toLowerCase()))
 
   return address && walletStatus === "Connected" ? (
-    <div className='base'>
+    <div className='base-voting-sift'>
       <Navbar />
       <div><img className="connect-title-gold-bg mt-5" src={titleGoldBg} />
       </div>
@@ -138,7 +138,7 @@ function VotingEntriesDry() {
   ) : (
     <Container>
       {" "}
-      <div className="base">
+      <div className="base-voting-sift">
         <div>
           <Center>
             <Container>

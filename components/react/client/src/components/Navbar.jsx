@@ -13,6 +13,9 @@ function Navbar() {
     function toConnect() {
       navigate('/Connect')
   }
+     function toRegister() {
+      navigate('/Register')
+  }
     function toHome() {
       navigate('/')
   }

@@ -1,12 +1,12 @@
 import { checkMembership } from "./checkMembership"
 import { coins } from "@cosmjs/stargate"
 
-const VOTING_CONTRACT = "juno15vk6eu7kvh24uzj447xkfqm654y0uv48pt524nl44cx592gzdwcs9y47ga"
+const VOTING_CONTRACT = "juno15z7ggmhaxwtj8wyzjqr9mf9d5euwny70l3eplyyq63an8e04pexsgt6ldu"
 
 export const queryJudge = async (client, address) => {
   return checkMembership(
     client,
-    "juno1rzc8xmegmsm20c7nz5zm657vs0lq0f3vu764eghqrd78c5725edqw5rqp4",
+    "juno13cs8u7t78kuyf2g8vzmqtur8q5jqgsn88jmzkzqk7f2cdzd6c6ps8mc4dm",
     address
   )
 }
@@ -14,9 +14,9 @@ export const queryJudge = async (client, address) => {
 export const getJudge = (weight) => {
   switch (weight) {
     case 1:
-      return "Judge"
+      return "1"
     default:
-      return "non-judge"
+      return "0"
   }
 }
 
@@ -98,8 +98,8 @@ export const queryMeltWinners = (
 export const queryRosinEntries = (
   client,
   category,
-  startAfter = 17, // Last entry id of previous category
-  limit = 60
+  startAfter = undefined, // Last entry id of previous category
+  limit = undefined
 ) => {
   return client.queryContractSmart(VOTING_CONTRACT, {
     entries: {
@@ -176,8 +176,8 @@ export const vote = (
       },
     },
     {
-      amount: coins(10000, "ujunox"),
-      gas: "10000",
+      amount: coins(4444, "ujuno"),
+      gas: "444444",
     }
   )
 }
